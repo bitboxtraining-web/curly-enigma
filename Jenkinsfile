@@ -16,7 +16,7 @@ pipeline {
         stage('Checkout code') {
             steps {
                 echo "Clonage du dépôt GitHub..."
-                checkout git
+                checkout scm
             }
         }
 

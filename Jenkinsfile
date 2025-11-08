@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    
+
     environment {
         // Utilisateur GitHub (le même que pour GHCR)
         GITHUB_USER = 'ton_utilisateur_github'
@@ -20,6 +20,7 @@ pipeline {
                 checkout scm
             }
         }
+        
 
         stage('Build Docker image') {
             steps {

@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    tools {
+    git 'git'
+}
     environment {
         // Utilisateur GitHub (le même que pour GHCR)
         GITHUB_USER = 'ton_utilisateur_github'

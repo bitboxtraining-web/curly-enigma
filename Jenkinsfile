@@ -1,5 +1,6 @@
 pipeline {
     agent any
+
     
     environment {
         // Utilisateur GitHub (le même que pour GHCR)
